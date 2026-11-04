@@ -210,6 +210,8 @@ a { color: inherit; }
   -webkit-text-fill-color: transparent;
   padding-bottom: var(--s-50);
 }
+.hero h1.heading-1 { line-height: 1.12; }
+@media (min-width: 768px) { .hero h1.heading-1 { font-size: 48px; } }   /* the long heading sits in two or three lines, not four */
 .hero-sub { color: var(--ink-soft); max-width: 680px; }
 .hero-cta { display: grid; gap: var(--s-100); justify-items: center; }
 .hero-note { color: var(--ink-soft); }
