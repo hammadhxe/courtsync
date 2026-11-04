@@ -385,3 +385,6 @@ a { color: inherit; }
 .hero-video .play-btn:hover { background: rgba(0, 0, 0, 0.1); }
 .footer-simple { display: grid; gap: var(--s-100); justify-items: center; text-align: center; }
 .footer-simple .caption-5 { margin-top: var(--s-100); color: #9aa3b8; }
+.video-link { text-align: center; margin-top: var(--s-200); }
+.video-link a { color: var(--ink-soft); text-underline-offset: 4px; transition: color 300ms var(--curve); }
+.video-link a:hover { color: var(--navy); }
