@@ -75,13 +75,15 @@
     links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
     var so = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
-        if (en.isIntersecting && map[en.target.id]) {
+        if (en.isIntersecting && en.target.id === 'top') {
+          links.forEach(function (a) { a.removeAttribute('aria-current'); });
+        } else if (en.isIntersecting && map[en.target.id]) {
           links.forEach(function (a) { a.removeAttribute('aria-current'); });
           map[en.target.id].setAttribute('aria-current', 'location');
         }
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
-    Object.keys(map).forEach(function (id) { var el = document.getElementById(id); if (el) so.observe(el); });
+    Object.keys(map).concat(['top']).forEach(function (id) { var el = document.getElementById(id); if (el) so.observe(el); });
   }
 
   // Demo video: shows a play button only when a YouTube code is set in index.html

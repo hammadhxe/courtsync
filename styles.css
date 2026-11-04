@@ -148,7 +148,9 @@ a { color: inherit; }
   -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
 }
 .brand { display: inline-flex; align-items: center; gap: var(--s-75); text-decoration: none; color: var(--navy); }
-.brand-mark { width: 24px; height: 24px; flex: none; }
+.brand img { height: 32px; width: auto; }
+.footer-logo { height: 32px; width: auto; }
+.ico { width: 1em; height: 1em; flex: none; display: block; }
 .nav-links { display: none; align-items: center; gap: var(--s-50); }
 .nav-links a:not(.btn) {
   padding: var(--s-75) var(--s-100); border-radius: var(--r-lg); text-decoration: none; color: var(--ink-soft);
@@ -216,7 +218,7 @@ a { color: inherit; }
   padding: var(--s-75) var(--s-100); border: 1px solid var(--line); border-radius: var(--r-xl); background: var(--white);
   text-align: left;
 }
-.hero-proof i { color: var(--gold-deep); font-size: 20px; flex: none; }
+.hero-proof .ico { color: var(--gold-deep); font-size: 20px; flex: none; }
 
 .hero-visual {
   position: relative; max-width: 880px; margin: var(--s-600) auto 0;
@@ -277,7 +279,7 @@ a { color: inherit; }
 .also { margin-top: var(--s-400); display: grid; gap: var(--s-100); }
 @media (min-width: 768px) { .also { grid-template-columns: repeat(3, 1fr); } }
 .also-item { display: flex; gap: var(--s-100); align-items: flex-start; padding: var(--s-200); border: 1px solid var(--line); border-radius: var(--r-xl); background: var(--paper); }
-.also-item i { font-size: 24px; color: var(--gold-deep); flex: none; }
+.also-item .ico { font-size: 24px; color: var(--gold-deep); flex: none; }
 .also-item p { color: var(--ink-soft); }
 
 /* Problem to solution */
@@ -287,7 +289,7 @@ a { color: inherit; }
 .split .col p { color: var(--ink-soft); }
 .check-list { display: grid; gap: var(--s-100); }
 .check-list li { display: flex; gap: var(--s-100); align-items: flex-start; }
-.check-list i { color: var(--gold-deep); font-size: 20px; margin-top: var(--s-25); flex: none; }
+.check-list .ico { color: var(--gold-deep); font-size: 20px; margin-top: var(--s-25); flex: none; }
 
 /* ---------- Tagline reveal ---------- */
 .tagline { padding-block: var(--s-800); }
@@ -325,8 +327,8 @@ a { color: inherit; }
   display: flex; justify-content: space-between; align-items: center; gap: var(--s-200); border-radius: var(--r-2xl);
 }
 .faq summary::-webkit-details-marker { display: none; }
-.faq summary i { transition: transform 500ms var(--curve); flex: none; color: var(--gold-deep); font-size: 20px; }
-.faq details[open] summary i { transform: rotate(45deg); }
+.faq summary .ico { transition: transform 500ms var(--curve); flex: none; color: var(--gold-deep); font-size: 20px; }
+.faq details[open] summary .ico { transform: rotate(45deg); }
 .faq summary:hover { background: var(--paper); }
 .faq .answer { padding: 0 var(--s-300) var(--s-300); color: var(--ink-soft); }
 

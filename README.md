@@ -7,10 +7,10 @@ The public site at https://court-sync.xyz. The app lives separately at https://a
 2. Change the words between the tags. Do not change anything inside `< >`.
 3. Click **Commit changes**. The site updates in about a minute.
 
-Marked gaps to fill: `{{price}}` in the FAQ, `{{date}}`, `{{app privacy details}}` and `{{governing law and courts}}` in `privacy.html` and `terms.html`, and a `{{testimonial}}` comment in the proof section.
+Left out on purpose until a lawyer supplies real text: pricing, privacy policy, terms. A `{{testimonial}}` comment in the proof section marks where a real quote can go.
 
 ## Add the demo video
-In `index.html`, find `data-video-id=""` and paste the 11 character YouTube code between the quotes. The play button then appears on the hero picture.
+The demo video code is in `data-video-id` in `index.html`. Change it to switch videos.
 
 ## Go live: GitHub Pages (free, HTTPS included)
 1. GitHub repo, **Settings, Pages**: Source = "Deploy from a branch", branch `main`, folder `/ (root)`. Save.
@@ -30,4 +30,4 @@ Delete any old parked or URL redirect record on `@` and `www` only. Do not touch
 ## After going live, check
 - https://court-sync.xyz and https://www.court-sync.xyz open the site with a padlock.
 - https://app.court-sync.xyz still opens the app and the login code email arrives.
-- An email sent to admin@court-sync.xyz reaches your inbox.
+- An email sent to hello@court-sync.xyz reaches your inbox.
