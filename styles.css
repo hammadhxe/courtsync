@@ -247,6 +247,10 @@ a { color: inherit; }
   transition: background-color 300ms var(--curve);
 }
 .play-btn[hidden] { display: none; }
+.video-box { position: relative; max-width: 880px; margin-inline: auto; aspect-ratio: 16 / 9; border-radius: var(--r-3xl); background: var(--navy); overflow: hidden; }
+.video-box .play-btn { background: transparent; }
+.video-box .play-btn:hover { background: rgba(255, 255, 255, 0.04); }
+.video-box .play-btn { gap: var(--s-200); color: var(--white); }
 .play-btn:hover { background: rgba(31, 42, 68, 0.4); }
 .play-btn .circle {
   width: 64px; height: 64px; border-radius: 9999px; background: var(--gold); color: var(--navy);

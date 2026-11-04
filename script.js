@@ -87,7 +87,7 @@
   }
 
   // Demo video: shows a play button only when a YouTube code is set in index.html
-  var fig = document.getElementById('hero-visual');
+  var fig = document.getElementById('video-box');
   var play = document.getElementById('play-btn');
   if (fig && play) {
     var id = (fig.getAttribute('data-video-id') || '').trim();
@@ -97,7 +97,7 @@
         var box = document.createElement('div');
         box.className = 'video-frame';
         var f = document.createElement('iframe');
-        f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+        f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&playsinline=1&rel=0';
         f.title = 'CourtSync demo video';
         f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
         f.allowFullscreen = true;
