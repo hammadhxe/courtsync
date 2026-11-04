@@ -93,6 +93,11 @@
     var id = (fig.getAttribute('data-video-id') || '').trim();
     if (/^[A-Za-z0-9_-]{11}$/.test(id)) {
       play.hidden = false;
+      var th = fig.querySelector('.video-thumb');
+      if (th) {
+        th.src = 'https://i.ytimg.com/vi/' + id + '/maxresdefault.jpg';
+        th.onerror = function () { th.onerror = null; th.src = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg'; };
+      }
       play.addEventListener('click', function () {
         var box = document.createElement('div');
         box.className = 'video-frame';

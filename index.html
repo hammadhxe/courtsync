@@ -51,7 +51,6 @@
     <a class="brand" href="#top" aria-label="CourtSync, back to top"><img src="logo.png" alt="CourtSync" width="175" height="40"></a>
     <div class="nav-links body-6" id="nav-links">
       <a href="#features">Features</a>
-      <a href="#demo">Demo</a>
       <a href="#how">How it works</a>
       <a href="#faq">Questions</a>
       <a href="#contact">Contact</a>
@@ -67,11 +66,10 @@
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <ul>
       <li style="--i:0"><a class="heading-3" href="#features">Features</a></li>
-      <li style="--i:1"><a class="heading-3" href="#demo">Demo</a></li>
-      <li style="--i:2"><a class="heading-3" href="#how">How it works</a></li>
-      <li style="--i:3"><a class="heading-3" href="#faq">Questions</a></li>
-      <li style="--i:4"><a class="heading-3" href="#contact">Contact</a></li>
-      <li style="--i:5"><a class="btn button-lg" href="https://app.court-sync.xyz">Register your firm</a></li>
+      <li style="--i:1"><a class="heading-3" href="#how">How it works</a></li>
+      <li style="--i:2"><a class="heading-3" href="#faq">Questions</a></li>
+      <li style="--i:3"><a class="heading-3" href="#contact">Contact</a></li>
+      <li style="--i:4"><a class="btn button-lg" href="https://app.court-sync.xyz">Register your firm</a></li>
     </ul>
   </div>
 </header>
@@ -94,32 +92,13 @@
       </p>
     </div>
 
-    <figure class="hero-visual reveal">
-      <div class="mock-bar">
-        <span class="body-4">Today's hearings</span>
-        <span class="tag caption-3">Sample screen, made up data</span>
-      </div>
-      <ul class="mock-list">
-        <li class="mock-row">
-          <div><p class="title-3">Bashir Ahmad v. State</p><p class="meta caption-1">Court Hall 3, Arguments</p></div>
-          <p class="when body-4">10:30 am</p>
-        </li>
-        <li class="mock-row">
-          <div><p class="title-3">Nazir Hardware Pvt Ltd v. Rahi Finance</p><p class="meta caption-1">Court Hall 7, Reply due</p></div>
-          <p class="when body-4">11:15 am</p>
-        </li>
-        <li class="mock-row">
-          <div><p class="title-3">Dar v. Municipal Corporation</p><p class="meta caption-1">Court Hall 2, Final hearing</p></div>
-          <p class="when body-4">12:40 pm</p>
-        </li>
-        <li class="mock-row">
-          <div><p class="title-3">Mir Estates v. Wani</p><p class="meta caption-1">Court Hall 5, Evidence</p></div>
-          <p class="when body-4">2:05 pm</p>
-        </li>
-      </ul>
-      <p class="mock-foot caption-1">Alert: Dar v. Municipal Corporation is 2 cases away from being called.</p>
-      <figcaption class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">A phone style list of today's court hearings, shown with made up sample cases.</figcaption>
-    </figure>
+    <!-- DEMO VIDEO: change the 11 character YouTube code in data-video-id (both places) to switch videos. -->
+    <div class="video-box hero-video reveal" id="video-box" data-video-id="P77YsqiFisU">
+      <img class="video-thumb" src="https://i.ytimg.com/vi/P77YsqiFisU/maxresdefault.jpg" alt="Thumbnail of the CourtSync demo video" width="1280" height="720">
+      <button class="play-btn" type="button" id="play-btn" aria-label="Play the CourtSync demo video">
+        <span class="circle"><svg class="ico" aria-hidden="true" fill="currentColor" viewBox="0 0 256 256" fill="currentColor"><path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"/></svg></span>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -219,27 +198,6 @@
     <div class="tagline-text">
       <h2 class="heading-2" id="tagline-h" data-reveal-words>Your whole firm sees the same dates, the same orders and the same tasks, so no one has to ask which hearing is tomorrow.</h2>
       <p class="tagline-sub body-3 reveal">That is the point of CourtSync. The firm's work is written down once, kept current from the courts, and seen by everyone.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DEMO VIDEO ============ -->
-<!--
-  DEMO VIDEO: the 11 character YouTube code is in data-video-id below.
-  For https://www.youtube.com/watch?v=AbCdEfGhIjK the code is AbCdEfGhIjK
--->
-<section class="section section--paper2" id="demo">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow caption-3">See it working</p>
-      <h2 class="heading-2">Watch CourtSync in use</h2>
-    </div>
-    <div class="video-box reveal" id="video-box" data-video-id="P77YsqiFisU">
-      <button class="play-btn" type="button" id="play-btn" aria-label="Play the CourtSync demo video">
-        <img src="logo-light.png" alt="" width="175" height="40" style="height:40px;width:auto">
-        <span class="circle"><svg class="ico" aria-hidden="true" fill="currentColor" viewBox="0 0 256 256" fill="currentColor"><path d="M232.4,114.49,88.32,26.35a16,16,0,0,0-16.2-.3A15.86,15.86,0,0,0,64,39.87V216.13A15.94,15.94,0,0,0,80,232a16.07,16.07,0,0,0,8.36-2.35L232.4,141.51a15.81,15.81,0,0,0,0-27ZM80,215.94V40l143.83,88Z"/></svg></span>
-        <span class="button-md">Watch the demo</span>
-      </button>
     </div>
   </div>
 </section>
@@ -364,33 +322,10 @@
 
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <img class="footer-logo" src="logo-light.png" alt="CourtSync" width="175" height="40">
-        <p class="body-6" style="max-width:360px;margin-top:8px">Case management for litigation firms in India.</p>
-      </div>
-      <nav aria-label="Footer">
-        <h2 class="title-3">Site</h2>
-        <ul class="body-6">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#demo">Demo</a></li>
-          <li><a href="#how">How it works</a></li>
-          <li><a href="#faq">Questions</a></li>
-          <li><a href="#top">Back to top</a></li>
-        </ul>
-      </nav>
-      <div>
-        <h2 class="title-3">Get in touch</h2>
-        <ul class="body-6">
-          <li><a href="https://app.court-sync.xyz">Register your firm</a></li>
-          <li><a href="mailto:hello@court-sync.xyz">hello@court-sync.xyz</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom caption-5">
-      <p>&copy; <span id="year">2026</span> CourtSync. All rights reserved.</p>
-          </div>
+  <div class="container footer-simple">
+    <img class="footer-logo" src="logo-light.png" alt="CourtSync" width="175" height="40">
+    <p class="body-6">Case management for litigation firms in India.</p>
+    <p class="caption-5">&copy; <span id="year">2026</span> CourtSync. All rights reserved.</p>
   </div>
 </footer>
 
