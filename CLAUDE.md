@@ -11,7 +11,7 @@ A case management system for litigation firms in India: each case's next court d
 Never invent facts: no made-up prices, statistics, customer names, testimonials or logos. Use clearly marked placeholders like {{price}} when a fact is missing. Demo screenshots must use made-up data only, never real cases or clients.
 
 ## What the site needs
-One page, or very few: what CourtSync is, the main features in plain words, a "Register your firm" button to https://app.court-sync.xyz, a contact line (admin@court-sync.xyz), a proper footer. Phone first; also good on tablets and laptops. Hammad must be able to change the text later without a developer.
+One page, or very few: what CourtSync is, the main features in plain words, a "Contact us" button (mailto:hello@court-sync.xyz, NOT a link to register in the app: firms are set up by Hammad after they write), a contact line (hello@court-sync.xyz), a LinkedIn link to Hammad in the footer, a proper footer. Phone first; also good on tablets and laptops. Hammad must be able to change the text later without a developer.
 
 ## Design: use the landing-page-design skill (`.claude/skills/landing-page-design/SKILL.md`)
 Use it for the structure, intake, copywriting, states, motion, spacing, SEO and ship checklist. Its intake questions replace any other questions: ask them in ONE batch, and keep it short.
